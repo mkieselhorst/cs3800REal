@@ -18,13 +18,23 @@
             Variables in php declared by starting with $
             php is loose language 
          */
+       
         $name = "Max ";
+        echo '<p style="font-size: 1.35em";> Name: $name </p>';
         echo $name;
         echo "<br />";
         $quantity = 10;
         $name = 65;
         echo $name;
+        // print and echo are not  methods or functions; they are known as constructs
 
+        // example of double quotes vs single
+        echo("<p style=\"color: red\";>Quantity:  $quantity </p>");
+
+        $collegeName = "Wright State University";
+        $first_name = "Max ";
+        print("<p>College Name: $collegeName </p>");
+        echo "2 + 3 = " . (2 + 3);
     ?>
 </body>
 </html>
