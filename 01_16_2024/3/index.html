@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="scripts/process.php" method="post">
+        <div>
+            <label for="name">full Name:</label>
+            <input type="text" name="name" id="name" require >
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" require >
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" require >
+        </div>
+        <label>what legal document do you have?</label> 
+        <br />
+        <input type="radio" name="document" id="passport" value="passport">
+        <label for="passport">Passport</label>
+        <br />
+        <input type="radio" name="document" id="driver_liscense" value="driver's liscense">
+        <label for="driver_liscense">Driver's Liscense</label>
+        <br />
+        <input type="radio" name="document" id="university_id" value="university id">
+        <label for="university_id">University Id</label>
+        <br />
+        
+
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+</html>
