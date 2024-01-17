@@ -18,10 +18,11 @@ input[type="text"], input[type="tel"], input[type="email"]{
     box-sizing: border-box;
 }
 
-input[type="radio"]{
+input[type="radio"], input[type="checkbox"]{
 margin-right: 5px;
 
 }
+
 input[type="submit"]{
 border-radius: 4px;
 color:white;
