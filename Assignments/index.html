@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</Form></title>
+    <link rel="stylesheet" href="Student Registration Form/CSS/main.css">
+</head>
+<body>
+    <form action="scripts/process.php" method="post">
+        <!-- Full Name Box -->
+        <div>
+        <label for="fullName"> Full Name: </label>
+        <input type="text" id="fullName" name="name" required placeholder="Full Name">
+        </div>
+        <!-- Email Box -->
+        <div>
+        <label for="emailAddr"> Email: </label>
+        <input type="email" id="emailAddr" name="email" required placeholder="Email@domain.com">
+        </div>
+        <!-- PhoneNum -->
+        <div>
+        <label for="phoneNum"> Phone Number: </label>
+        <input type="tel" id="phoneNum" name="phone" placeholder="###-###-####">
+        </div>
+        <!-- Radio buttons -->
+        <label> Student Status: </label>
+        <br/>
+        <!-- full rime button -->
+        <input type="radio" name="status" id="fullTime" value="Full Time">
+        <label for="fullTime">Full Time</label>
+        <br/>
+        <!-- Part Time button -->
+        <input type="radio" name="status" id="partTime" value="Part Time">
+        <label for="partTime">Part Time</label>
+        <br/>
+        <!-- Check Boxes -->
+        <label> Interests: </label>
+        <br/>
+        <!-- Science -->
+        <input type="checkbox" name="interest" id="scienceSub" value="Science">
+        <label for="fullTime">Science</label>
+        <br/>
+        <!-- Math -->
+        <input type="checkbox" name="interest" id="mathSub" value="Math">
+        <label for="partTime">Math</label>
+        <br/>
+        <!-- Literature -->
+        <input type="checkbox" name="interest" id="litSub" value="Literature">
+        <label for="fullTime">Literature</label>
+        <br/>
+        <!-- history -->
+        <input type="checkbox" name="interest" id="histSub" value="History">
+        <label for="partTime">History</label>
+        <br/>
+        <!-- Dropdown -->
+        <label for="majorSelect">Major: </label>
+        <br/>
+        <!-- options -->
+        <select name="major" id="majorSelect" required multiple>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business">Business</option>
+            <option value="Arts">Arts</option>
+        </select>
+        <!-- SubmitButton -->
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+    
+</body>
+</html>
