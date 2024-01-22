@@ -11,7 +11,9 @@ label{
     display:inline-block;
     margin-bottom: 5px;
 }
-
+label[id='sci']:hover, label[id='math']:hover, label[id='lit']:hover, label[id='hist']:hover, label[id='pt']:hover, label[id='ft']:hover{
+    background-color: #cecece;
+}
 input[type="text"], input[type="tel"], input[type="email"]{
     width: 100%;
     margin: 10px ;
@@ -22,6 +24,11 @@ input[type="text"], input[type="tel"], input[type="email"]{
 
 input[type="radio"], input[type="checkbox"]{
     margin:8px 5px;
+    
+}
+input[type="radio"]:hover, input[type="checkbox"]:hover{
+    background-color: #cecece;
+    
 }
 
 input[type="submit"]{
@@ -43,4 +50,7 @@ select{
     
     box-sizing: border-box;
     display: block;
+}
+select option:hover{
+    background-color: #cecece;
 }
