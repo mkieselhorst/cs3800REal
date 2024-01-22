@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Student Registration Form/CSS/main.css">
 </head>
 <body>
-    <form action="Scripts/process.php" method="post">
+    <form action="Scripts/process.php" method="post" name="mainForm">
         <!-- Full Name Box -->
         <div>
         <label for="fullName"> Full Name: </label>
@@ -38,26 +38,26 @@
         <label> Interests: </label>
         <br/>
         <!-- Science -->
-        <input type="checkbox" name="interest" id="scienceSub" value="Science">
-        <label for="fullTime">Science</label>
+        <input type="checkbox" name="interests[]" id="scienceSub" value="Science">
+        <label for="scienceSub">Science</label>
         <br/>
         <!-- Math -->
-        <input type="checkbox" name="interest" id="mathSub" value="Math">
-        <label for="partTime">Math</label>
+        <input type="checkbox" name="interests[]" id="mathSub" value="Math">
+        <label for="mathSub">Math</label>
         <br/>
         <!-- Literature -->
-        <input type="checkbox" name="interest" id="litSub" value="Literature">
-        <label for="fullTime">Literature</label>
+        <input type="checkbox" name="interests[]" id="litSub" value="Literature">
+        <label for="litSub">Literature</label>
         <br/>
         <!-- history -->
-        <input type="checkbox" name="interest" id="histSub" value="History">
-        <label for="partTime">History</label>
+        <input type="checkbox" name="interests[]" id="histSub" value="History">
+        <label for="histSub">History</label>
         <br/>
         <!-- Dropdown -->
         <label for="majorSelect">Major: </label>
         <br/>
         <!-- options -->
-        <select name="major" id="majorSelect" required multiple>
+        <select name="major[]" id="majorSelect" required multiple >
             <option value="Computer Science">Computer Science</option>
             <option value="Engineering">Engineering</option>
             <option value="Business">Business</option>
