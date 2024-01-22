@@ -1,0 +1,46 @@
+
+form{
+    margin: 10px auto;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+label{
+    display:inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    width: 100%;
+    margin: 10px ;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin:8px 5px;
+}
+
+input[type="submit"]{
+    border-radius: 4px;
+    color:white;
+    background-color: #4caf50;
+    border:1px solid gray;
+    padding: 10px 15px;
+    width: 15%;
+}
+
+input[type="submit"]:hover{
+    background-color: #42ca47;
+}
+
+select{
+    width: 15%;
+    margin: 10px  0px;
+    
+    box-sizing: border-box;
+    display: block;
+}
