@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="script/process.php" method="post">
+        <label for="">Name: </label>
+        <input type="text" name="name" id="">
+        <label for="">Phone: </label>
+        <input type="tel" name="tel" id="">
+        <label for="">Email: </label>
+        <input type="email" name="email" id="">
+        <fieldset>
+            <legend></legend>
+            <label for="">Gender</label>
+            <label for=""><input type="radio" name="gender" value="">Male</label>
+            <label for=""><input type="radio" name="gender" value="">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend></legend>
+            <label for="">How did you hear about us?</label>
+            <label for=""><input type="radio" name="reference" value="">friend</label>
+            <label for=""><input type="radio" name="reference" value="">internet</label>
+            <label for=""><input type="radio" name="reference" value="">youtube</label>
+            <label for=""><input type="radio" name="reference" value="">Social media</label>
+        </fieldset>
+        <fieldset>
+            <legend></legend>
+            <label for="">Favorite Sprots</label>
+            <label for=""><input type="checkbox" name="sports[]" value="">tennis</label>
+            <label for=""><input type="checkbox" name="sports[]" value="">racquetball</label>
+            <label for=""><input type="checkbox" name="sports[]" value="">volleyball</label>
+            <label for=""><input type="checkbox" name="sports[]" value="">pickleball</label>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

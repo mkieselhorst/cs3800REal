@@ -1,0 +1,17 @@
+fieldset{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin:5px 0;
+
+}
+fieldset > label{
+    display: inline;
+    margin-right: 10px;
+
+}
+legend{
+    display: none;
+}
+
