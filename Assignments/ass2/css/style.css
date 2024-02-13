@@ -1,0 +1,70 @@
+form{
+    width: 75%;
+    font-family: Arial, sans-serif;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+}
+fieldset{
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+label{
+    display: block;
+    margin-bottom: 20px;
+    height: 20px;
+}
+fieldset:nth-of-type(1) label:nth-of-type(2):hover{
+    background-color: rgb(221, 221, 221);
+}
+fieldset:nth-of-type(1) label:nth-of-type(3):hover{
+    background-color: rgb(221, 221, 221);
+}
+fieldset:nth-of-type(3) label:nth-of-type(2):hover{
+    background-color: rgb(221, 221, 221);
+}
+fieldset:nth-of-type(3) label:nth-of-type(3):hover{
+    background-color: rgb(221, 221, 221);
+}
+fieldset:nth-of-type(3) label:nth-of-type(4):hover{
+    background-color: rgb(221, 221, 221);
+}
+fieldset:nth-of-type(3) label:nth-of-type(5):hover{
+    background-color: rgb(221, 221, 221);
+}
+div{
+    margin-bottom: 20px;
+}
+div label{
+    margin-bottom: 10px;
+    margin-right:250px;
+}
+div input{
+    width: 15%;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    height: 25px;
+    font-size: large;
+}
+div input{
+    background-color: aliceblue;
+}
+.bttn{
+
+    background-color: rgb(40, 102, 235);
+    color: white;
+    width: 25%;
+    height: 40px;
+    border: 2px solid rgb(40, 102, 235);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.bttn:hover{
+    background-color:rgb(67, 121, 240);
+    border: 2px solid rgb(67, 121, 240);
+}

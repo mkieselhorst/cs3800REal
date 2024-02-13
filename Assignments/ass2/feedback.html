@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <form action="script/process.php" method="post">
+        <!-- creating form -->
+        <div class="name">
+            <label for="">Name: </label>
+            <input type="text" name="name" id="">
+            <label for="">Email: </label>
+            <input type="email" name="email" id="">
+        </div>
+        
+
+        <fieldset>
+            <!-- radio selection -->
+            <label for="">Attendance:</label>
+            <label for=""><input type="radio" name="attendance" value="Attended">Attended</label>
+            <label for=""><input type="radio" name="attendance" value="Did Not attend">Did Not Attend</label>
+        </fieldset>
+        <fieldset>
+            <!-- feedback input -->
+            <label for="">Feedback:</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend></legend>
+            <!-- dietar checkbox -->
+            <label for="">Dietary Preferences</label>
+            <label for=""><input type="checkbox" name="diet[]" value="Vegetarian" >Vegetarian</label>
+            <label for=""><input type="checkbox" name="diet[]" value="Vegan" >Vegan</label>
+            <label for=""><input type="checkbox" name="diet[]" value="Gluten-free" >Gluten-Free</label>
+            <label for=""><input type="checkbox" name="diet[]" value="None">None</label>
+        </fieldset>
+        <!-- submitbuttn -->
+        <input type="submit" value="Submit" class="bttn">
+        
+    </form>
+</body>
+</html>
