@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <form action="scripts/process.php" method="POST">
+        <div class="title">
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title">
+        </div>
+        <div class="isbn">
+            <label for="isbn">ISBN:</label><br>
+            <input type="text" name="isbn" id="isbn">
+        </div>
+        <div class="year">
+            <label for="year">Year: </label><br>
+            <input type="text" name="year" id="year">
+        </div>
+        <div class="author">
+            <label for="author">Author:</label><br>
+            <input type="text" name="author" id="author">
+        </div>
+        <div class="submit" style="margin-top: 11px;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
