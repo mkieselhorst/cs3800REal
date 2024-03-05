@@ -23,6 +23,9 @@ class FacultyTable{
             if(!$this->dbConnection->query($sql)){
                 echo "Error: creating table FacultyTable failed" . $this->dbConnection->error;
             }   
+            
+            
+        
     }
 }
 
