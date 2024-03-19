@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>Student Registration Form</h2>
+    <form action="Scripts/process.php" method="post">
+        <label for="studentFirstName">First Name</label><br>
+        <input type="text" id="studentFirstName" name="studentFirstName" placeholder="FIRST NAME"><br>
+        <label for="studentLastName">Last Name</label><br>
+        <input type="text" id="studentLastName" name="studentLastName" placeholder="LAST NAME"><br>
+        <label for="studentMajor">Major</label><br>
+        <input type="text" id="studentMajor" name="studentMajor" placeholder="MAJOR"><br>
+
+        <input type="submit" value="Submit Information">
+        <style>
+            form{
+                width: 50%;
+                margin: 50px auto 0;
+                border: 1px solid black;
+                text-align: center;
+            }
+            input{
+                margin-bottom: 11px;
+            }
+        </style>
+
+
+    </form>
 </body>
 </html>
