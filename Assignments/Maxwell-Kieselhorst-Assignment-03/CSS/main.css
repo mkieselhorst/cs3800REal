@@ -1,0 +1,26 @@
+h2{
+    text-align: center;
+}
+form{
+    width: 25%;
+    margin: 50px auto 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+}
+input{
+    margin-bottom: 11px;
+}
+table{
+    width: 450px;
+    margin: auto;
+}
+table, td, th{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+.return{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 725px;
+}
