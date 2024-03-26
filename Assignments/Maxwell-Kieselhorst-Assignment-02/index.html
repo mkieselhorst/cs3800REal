@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Scripts/showHide.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body onload="Check();">
+    <form action="Scripts/process.php " method="POST">
+
+
+        <!-- all the txt input fields -->
+        <fieldset class="textInfo">
+            <label for="name">Name:  </label>
+            <input type="text" name="name" id="name" placeholder="John Smith">
+            <br />
+            <label for="email">Email:  </label>
+            <input type="email" name="email" id="email" placeholder="example@youremail.com">
+            <br />
+            <label for="phone">Phone:  </label>
+            <input type="tel" name="phone" id="phone" placeholder="(xxx)-xxx-xxxx">
+            <br />
+        </fieldset>
+
+
+        <!-- Radio time -->
+        <fieldset class="radioSelections" >
+                <!-- Radio buttons -->
+            <label class="mainLabel"> Gender: </label>
+            <br/>
+            <!-- male button -->
+            <input type="radio" name="gender" id="male" value="Male" onclick="Check();">
+            <label id="ml" for="male">Male</label>
+            <br/>
+            <!-- female button -->
+            <input type="radio" name="gender" id="female" value="Female" onclick="Check();">
+            <label id="fl" for="female">Female</label>
+            <br/>
+            <!-- other button -->
+            <input type="radio" name="gender" id="other" value="other" onclick="Check();">
+            <label id="ot" for="other">Other</label>
+            <!-- attempting checkbox to appear on selection of other -->
+            <div id="otherField">
+                <label for="otherGender" >If Other, Please Specify: </label>
+                <input type="text" name="other" id="otherGender">
+            </div>
+            <br/>
+
+
+            <label class="mainLabel"> Status: </label>
+            <br/>
+            <!-- Freshman -->
+            <input type="radio" name="status" id="freshman" value="freshman">
+            <label id="fm" for="freshman">Freshman</label>
+            <br/>
+            <!-- sophomore -->
+            <input type="radio" name="status" id="sophomore" value="sophomore">
+            <label id="sm" for="sophomore">Sophomore</label>
+            <br/>
+            <!-- junior -->
+            <input type="radio" name="status" id="junior" value="junio">
+            <label id="jr" for="junior">Junior</label>
+            <br />
+            <!-- senior -->
+            <input type="radio" name="status" id="senior" value="senior">
+            <label id="sr" for="senior">Senior</label>
+            <br/>
+
+
+            <label class="mainLabel"> Major: </label>
+            <br/>
+            <!-- CS -->
+            <input type="radio" name="major" id="compSci" value="Computer Science">
+            <label id="CS" for="compSci">Computer Science</label>
+            <br/>
+            <!-- EE -->
+            <input type="radio" name="major" id="elecEng" value="Electrical Engineering">
+            <label id="EE" for="elecEng">Electrical Engineering</label>
+            <br/>
+            <!-- MM -->
+            <input type="radio" name="major" id="math" value="Mathematics">
+            <label id="MM" for="math">Mathematics</label>
+            <br />
+            <!-- ME -->
+            <input type="radio" name="major" id="mechEng" value="Mechanical Engineering">
+            <label id="ME" for="mechEng">Mechanical Engineering</label>
+            <br/>
+        </fieldset>
+
+        <!-- checkbox time -->
+        <fieldset class="checkBoxes">
+            <!-- Check Boxes -->
+            <label> Interests: </label>
+            <br/>
+            <!-- Science -->
+            <input type="checkbox" name="interests[]" id="campAff" value="Campus Affiliations">
+            <label id="CA" for="campAff">Campus Affiliations</label>
+            <br/>
+            <!-- Math -->
+            <input type="checkbox" name="interests[]" id="mathClub" value="Math Club">
+            <label id="MC" for="mathClub">Math Club</label>
+            <br/>
+            <!-- Literature -->
+            <input type="checkbox" name="interests[]" id="codeClub" value="Coding Club">
+            <label id="CC" for="codeClub">Coding Club</label>
+            <br/>
+            <!-- history -->
+            <input type="checkbox" name="interests[]" id="sportClub" value="Sports Club">
+            <label id="SC" for="sportClub">Sports Club</label>
+            <br/>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
