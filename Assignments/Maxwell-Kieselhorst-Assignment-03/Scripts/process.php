@@ -47,5 +47,5 @@
             exit();
         }
     };
-    
+    header('thankyou.php')
 ?>
