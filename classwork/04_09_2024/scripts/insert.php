@@ -2,7 +2,7 @@
 // include connection.php in useage
 include "../scripts/connection.php";
 
-$target_dir     = "uploads/";
+$target_dir     = "../uploads/";
 $target_file    = $target_dir . basename($_FILES['image']["name"]);
 $uploadOk       = 1;
 $imageFIleType  = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -21,7 +21,7 @@ if(move_uploaded_file($_FILES['image']["tmp_name"], $target_file)){
     $imagePath  = $target_file;
 
     $sql        = "INSERT INTO tblStudents(firstName, lastName, email, city, state, zipCode, imagePath)
-                            VALUES('$firstName, $lastName, $email, $city, $state, $zipCode, $imagePath')";
+                            VALUES('$firstName', '$lastName', '$email', '$city', '$state', '$zipCode', '$imagePath')";
 
 
     if(!mysqli_query($conn, $sql)){
@@ -30,4 +30,5 @@ if(move_uploaded_file($_FILES['image']["tmp_name"], $target_file)){
         echo("New record created");
     }
 }
+mysqli_close($conn);
 ?>
