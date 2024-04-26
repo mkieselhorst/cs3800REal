@@ -1,6 +1,6 @@
 <?php
 // include connection.php in useage
-include "../scripts/connection.php";
+include "connection.php";
 
 $target_dir     = "../uploads/";
 $target_file    = $target_dir . basename($_FILES['image']["name"]);
